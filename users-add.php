@@ -6,7 +6,7 @@
     $_SESSION['redirect_to'] = 'users-add.php';
 
     $user = $_SESSION['$user'];
-    $users = include('database/show-users.php');
+    $users = include('database/show-users.html');
 ?>
 
 <DOCTYPE html>
