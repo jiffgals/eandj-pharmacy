@@ -1,12 +1,12 @@
 <?php
     // start the session.
     session_start();
-    if(isset($_SESSION['user'])) header('location: dashboard.html');
+    if(isset($_SESSION['user'])) header('location: https://jiffgals.github.io/eandj-pharmacy/dashboard.html');
 
     $error_message = '';
 
     if($_POST){
-        include('database/connection.html');
+        include('https://jiffgals.github.io/eandj-pharmacy/database/connection.html');
 
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -22,7 +22,7 @@
             // Captures data of currently login users.
             $_SESSION['$user'] = $user;
 
-            header('location: dashboard.html');
+            header('location: https://jiffgals.github.io/eandj-pharmacy/dashboard.html');
         } else $error_message = 'Please make sure that username and password are correct.';
     }
 ?>
