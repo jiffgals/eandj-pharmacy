@@ -1,7 +1,7 @@
 <?php
     // start the session.
     session_start();
-    if(isset($_SESSION['user'])) header('location: index.php');
+    if(isset($_SESSION['user'])) header('location: index.html');
 
     $_SESSION['table'] = 'products';
     $_SESSION['redirect_to'] = 'product-add.php';
@@ -13,7 +13,7 @@
     <html>
     <head>
         <title>Add Product - Admin Control Panel</title>
-        <?php include('partials/app-header-scripts.php') ?>
+        <?php include('partials/app-header-scripts.html') ?>
     
         <style>
     
@@ -21,16 +21,16 @@
     </head>
     <body>
         <div id="dashboardMainContainer" id="dashboardMainContainer">
-            <?php include('partials/app-sidebar.php') ?>
+            <?php include('partials/app-sidebar.html') ?>
             <div class="dashboard_content_container" id="dashboard_content_container">
-                <?php include('partials/app-topnav.php') ?>
+                <?php include('partials/app-topnav.html') ?>
                 <div class="dashboard_content">
                     <div class="dashboard_content_main" id="dashboard_content_main">
                         <div class="row">
                             <div class="column column-12">
                                 <h1 class="section_header"><i class="fa fa-plus"></i> Create Product</h1>
                                     <div class="userAddFormContainer">
-                                        <form action="database/add.php" method="POST" class="appForm" enctype="multipart/form-data">
+                                        <form action="database/add.html" method="POST" class="appForm" enctype="multipart/form-data">
                                             <div class="appFormInputContainer">
                                                 <label for="product_name">Product Name</label>
                                                 <input type="text" class="appFormInput" id="product_name" placeholder="Enter product name..." name="product_name" />
