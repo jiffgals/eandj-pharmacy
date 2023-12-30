@@ -33,7 +33,63 @@
     </head>
     <body>
         <div id="dashboardMainContainer" id="dashboardMainContainer">
-            <?php include('partials/app-sidebar.php') ?>
+            <!-- <?php include('partials/app-sidebar.php') ?> -->
+            <!-- <?php
+    $user = $_SESSION['$user']
+?> -->
+
+<div class="dashboard_sidebar" id="dashboard_sidebar">
+    <h3 class="dashboard_logo" id="dashboard_logo">Admin</h3>
+        <div class="dashboard_sidebar_user">
+            <img src="images/user/userimage.jpg" alt="user image" id="userImage" />
+            <span><?= $user['first_name'] . ' ' . $user['last_name'] ?></span>
+        </div>
+        <div class="dashboard_sidebar_menus">
+            <ul class="dashboard_menu_lists">
+                <!--  class="menuActive" -->
+                <li class="liMainMenu">
+                    <a href="./dashboard.html"><i class="fa fa-dashboard"></i> <span class="menuText">Dashboard</span></a>
+                </li>
+                <li class="liMainMenu">
+                    <a href="javascript:void(0);" class="showHideSubMenu">
+                        <i class="fa fa-tag showHideSubMenu"></i> 
+                        <span class="menuText showHideSubMenu">Product</span>
+                        <i class="fa fa-angle-left mainMenuIconArrow showHideSubMenu"></i> 
+                    </a>
+
+                    <ul class="subMenus">
+                        <li><a class="subMenuLink" href="./product-view.html"> <i class="fa fa-circle-o"></i> View Product</a></li>
+                        <li><a class="subMenuLink" href="./product-add.html"> <i class="fa fa-circle-o"></i> Add Product</a></li>
+                    </ul>
+                </li>
+                <li class="liMainMenu">
+                    <a href="javascript:void(0);" class="showHideSubMenu">
+                        <i class="fa fa-truck showHideSubMenu"></i> 
+                        <span class="menuText showHideSubMenu">Supplier</span>
+                        <i class="fa fa-angle-left mainMenuIconArrow showHideSubMenu"></i> 
+                    </a>
+
+                    <ul class="subMenus">
+                        <li><a class="subMenuLink" href="#"> <i class="fa fa-circle-o"></i> View Supplier</a></li>
+                        <li><a class="subMenuLink" href="#"> <i class="fa fa-circle-o"></i> Add SUpplier</a></li>
+                    </ul>
+                </li>
+                <li class="liMainMenu showHideSubMenu">
+                    <a href="javascript:void(0);" class="showHideSubMenu">
+                        <i class="fa fa-user-plus showHideSubMenu"></i> 
+                        <span class="menuText showHideSubMenu">User</span>
+                        <i class="fa fa-angle-left mainMenuIconArrow showHideSubMenu"></i> 
+                    </a>
+
+                    <ul class="subMenus">
+                        <li><a class="subMenuLink" href="./users-view.html"> <i class="fa fa-circle-o"></i> View Users</a></li>
+                        <li><a class="subMenuLink" href="./users-add.html"> <i class="fa fa-circle-o"></i> Add User</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+</div>
+            
             <div class="dashboard_content_container" id="dashboard_content_container">
                 <?php include('partials/app-topnav.php') ?>
                 <div class="dashboard_content">
