@@ -4,14 +4,14 @@
     if(isset($_SESSION['user'])) header('location: index.php');
 
     $_SESSION['table'] = 'products';
-    $products = include('database/show.php');
+    $products = include('https://jiffgals.github.io/eandj-pharmacy/database/show.php');
 ?>
 
 <DOCTYPE html>
     <html>
     <head>
         <title>View Products - Admin Control Panel</title>
-        <?php include('partials/app-header-scripts.php') ?>
+        <?php include('https://jiffgals.github.io/eandj-pharmacy/partials/app-header-scripts.php') ?>
     
         <style>
     
@@ -19,9 +19,9 @@
     </head>
     <body>
         <div id="dashboardMainContainer" id="dashboardMainContainer">
-            <?php include('partials/app-sidebar.php') ?>
+            <?php include('https://jiffgals.github.io/eandj-pharmacy/partials/app-sidebar.php') ?>
             <div class="dashboard_content_container" id="dashboard_content_container">
-                <?php include('partials/app-topnav.php') ?>
+                <?php include('https://jiffgals.github.io/eandj-pharmacy/partials/app-topnav.php') ?>
                 <div class="dashboard_content">
                     <div class="dashboard_content_main" id="dashboard_content_main">
                         <div class="row">
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-<?php include('partials/app-scripts.php') ?>
+<?php include('https://jiffgals.github.io/eandj-pharmacy/partials/app-scripts.php') ?>
 <script>
     function script(){
 
