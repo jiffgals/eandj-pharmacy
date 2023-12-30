@@ -12,7 +12,7 @@
             <ul class="dashboard_menu_lists">
                 <!--  class="menuActive" -->
                 <li class="liMainMenu">
-                    <a href="./dashboard.php"><i class="fa fa-dashboard"></i> <span class="menuText">Dashboard</span></a>
+                    <a href="./dashboard.html"><i class="fa fa-dashboard"></i> <span class="menuText">Dashboard</span></a>
                 </li>
                 <li class="liMainMenu">
                     <a href="javascript:void(0);" class="showHideSubMenu">
@@ -22,8 +22,8 @@
                     </a>
 
                     <ul class="subMenus">
-                        <li><a class="subMenuLink" href="./product-view.php"> <i class="fa fa-circle-o"></i> View Product</a></li>
-                        <li><a class="subMenuLink" href="./product-add.php"> <i class="fa fa-circle-o"></i> Add Product</a></li>
+                        <li><a class="subMenuLink" href="./product-view.html"> <i class="fa fa-circle-o"></i> View Product</a></li>
+                        <li><a class="subMenuLink" href="./product-add.html"> <i class="fa fa-circle-o"></i> Add Product</a></li>
                     </ul>
                 </li>
                 <li class="liMainMenu">
@@ -46,8 +46,8 @@
                     </a>
 
                     <ul class="subMenus">
-                        <li><a class="subMenuLink" href="./users-view.php"> <i class="fa fa-circle-o"></i> View Users</a></li>
-                        <li><a class="subMenuLink" href="./users-add.php"> <i class="fa fa-circle-o"></i> Add User</a></li>
+                        <li><a class="subMenuLink" href="./users-view.html"> <i class="fa fa-circle-o"></i> View Users</a></li>
+                        <li><a class="subMenuLink" href="./users-add.html"> <i class="fa fa-circle-o"></i> Add User</a></li>
                     </ul>
                 </li>
             </ul>
