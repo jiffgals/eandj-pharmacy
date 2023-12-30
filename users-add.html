@@ -6,7 +6,15 @@
     $_SESSION['redirect_to'] = 'users-add.php';
 
     $user = $_SESSION['$user'];
-    $users = include('database/show-users.html');
+    <!-- $users = include('database/show-users.html'); -->
+    include('connection.php');
+
+    $stmt = $conn->prepare("SELECT * FROM users ORDER BY created_at DESC");
+    $stmt->execute();
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+    return $stmt->fetchAll();
+        
 ?>
 
 <DOCTYPE html>
